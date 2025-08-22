@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 // import { toast } from "sonner";
 
 const Home = () => {
-   const { data: categories, loading: categoriesLoading } = useFetch("http://localhost:4000/categories");
+  const { data: categories, loading: categoriesLoading } = useFetch("http://localhost:4000/categories");
   const { data: products, loading: productsLoading } = useFetch("http://localhost:4000/products");
 
   return (

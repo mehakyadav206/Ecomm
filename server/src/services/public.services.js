@@ -38,7 +38,7 @@ const getProductBySlugDB = async (slug) => {
     const images = await Image.find({ product_id: product._id });
     // console.log(images)
 
-    return { ...product.doc, images };
+    return { ...product._doc, images };
 };
 
 module.exports = { getAllProductsDB, getAllCategoriesDB, getProductsByCategoryDB, getProductBySlugDB };

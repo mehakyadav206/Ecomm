@@ -30,9 +30,9 @@ const ProductDetails = () => {
                 <ImageContainer data={data.images} />
             </div>
             <div className="w-full p-2">
-                <Link to={`/products/${data.category.slug}`} className="text-blue-500 font-semibold">
+                {/* <Link to={`/products/${data.category.slug}`} className="text-blue-500 font-semibold">
                    {data.category.name}
-                </Link>
+                </Link> */}
                 <h1 className="text-2xl font-semibold py-3">{data.title}</h1>
                 <p className={readMore ? "" : "line-clamp-3"}>{data.description}</p>
                 <p className="text-blue-500 font-semibold cursor-pointer" onClick={() => setReadMore(!readMore)}>
